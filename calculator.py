@@ -1,16 +1,16 @@
 from tkinter import *
 
 # Let's create the Tkinter window
-window = Tk()
+root = Tk()
 
 # Then, you will define the size of the window in width(312) and height(324) using the 'geometry' method
-window.geometry("500x500")
+root.geometry("500x500")
 
 # In order to prevent the window from getting resized you will call 'resizable' method on the window
-window.resizable(0, 0)
+root.resizable(0, 0)
 
 #Finally, define the title of the window
-window.title("Calcualtor GUI")
+root.title("Calcualtor GUI")
 
 
 # Let's now define the required functions for the Calculator to function properly.
@@ -42,7 +42,7 @@ input_text = StringVar()
 # Once all the functions are defined then comes the main section where you will start defining the structure of the calculator inside the GUI.
 
 # The first thing is to create a frame for the input field
-input_frame = Frame(window, width = 312, height = 50, bd = 0, highlightbackground = "black", highlightcolor = "black", highlightthickness = 1)
+input_frame = Frame(root, width = 312, height = 50, bd = 0, highlightbackground = "black", highlightcolor = "black", highlightthickness = 1)
 input_frame.pack(side = TOP)
 
 
@@ -53,7 +53,7 @@ input_field.pack(ipady = 10) # 'ipady' is an internal padding to increase the he
 
 
 # Once you have the input field defined then you need a separate frame which will incorporate all the buttons inside it below the 'input field'
-btns_frame = Frame(window, width = 312, height = 272.5, bg = "grey")
+btns_frame = Frame(root, width = 312, height = 272.5, bg = "grey")
 btns_frame.pack()
 
 
@@ -89,4 +89,4 @@ point = Button(btns_frame, text = ".", fg = "black", width = 10, height = 3, bd 
 equals = Button(btns_frame, text = "=", fg = "black", width = 10, height = 3, bd = 0, bg = "#eee", cursor = "hand2", command = lambda: btn_equal()).grid(row = 4, column = 3, padx = 1, pady = 1)
 
 
-window.mainloop()
+root.mainloop()
