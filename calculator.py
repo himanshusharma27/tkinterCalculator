@@ -4,7 +4,7 @@ from tkinter import *
 window = Tk()
 
 # Then, you will define the size of the window in width(312) and height(324) using the 'geometry' method
-window.geometry("312x324")
+window.geometry("500x500")
 
 # In order to prevent the window from getting resized you will call 'resizable' method on the window
 window.resizable(0, 0)
