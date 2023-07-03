@@ -10,7 +10,7 @@ window.geometry("500x500")
 window.resizable(0, 0)
 
 #Finally, define the title of the window
-window.title("Calcualtor")
+window.title("Calcualtor GUI")
 
 
 # Let's now define the required functions for the Calculator to function properly.
